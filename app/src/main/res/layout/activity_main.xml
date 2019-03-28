@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutBotoes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/LogomarcaGW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/logomarcagw" />
+
+        <Button
+            android:id="@+id/btnRepresentante"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="18dp"
+            android:text="Representante" />
+
+        <Button
+            android:id="@+id/btnFuncionario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="18dp"
+            android:text="Funcionário" />
+
+        <Button
+            android:id="@+id/btnMotorista"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="18dp"
+            android:text="Motorista" />
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLoginRepresentante"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/LogomarcaGW2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/logomarcagw" />
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutLoginRepresentante"
+            android:layout_width="261dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/editCnpjRepresentante"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="CNPJ"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/editEmailRepresentante"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="E-mail"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/editSenhaRepresentante"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Senha"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/btnLoginRepresentante"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Login" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnTrocarAcesso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:text="Trocar Acesso" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayoutLoginFuncionario"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+
+        <ImageView
+            android:id="@+id/LogomarcaGW3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/logomarcagw" />
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutLoginFuncionario"
+            android:layout_width="261dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/editCnpjFuncionario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="CNPJ"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/editEmailFuncionario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="E-mail"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/editSenhaFuncionario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Senha"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/btnLoginFuncionario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Login" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnTrocarAcesso2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:text="Trocar Acesso" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayoutLoginMotorista"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:id="@+id/LogomarcaGW4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/logomarcagw" />
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutLoginMotorista"
+            android:layout_width="261dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/editCnpjMotorista"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="CNPJ"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/editCpfMotorista"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="CPF"
+                android:inputType="number" />
+
+
+            <Button
+                android:id="@+id/btnLoginMotorista"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Login" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnTrocarAcesso3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:text="Trocar Acesso" />
+
+    </FrameLayout>
+</FrameLayout>
