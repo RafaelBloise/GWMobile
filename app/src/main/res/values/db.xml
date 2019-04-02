@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="db_name">gwmobiledb</string>
+    <integer name="db_version">1</integer>
+    <string-array name="db_scan">
+        <item>mobi.stos.gwmobile.bean.Anexo</item>
+        <item>mobi.stos.gwmobile.bean.Documento</item>
+        <item>mobi.stos.gwmobile.bean.Ocorrencia</item>
+    </string-array>
+    <string name="db_log">true</string>
+</resources>
